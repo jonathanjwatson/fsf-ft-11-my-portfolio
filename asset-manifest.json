@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/fsf-ft-11-my-portfolio/static/js/main.04c96281.chunk.js",
+    "main.js.map": "/fsf-ft-11-my-portfolio/static/js/main.04c96281.chunk.js.map",
+    "runtime-main.js": "/fsf-ft-11-my-portfolio/static/js/runtime-main.04a910e7.js",
+    "runtime-main.js.map": "/fsf-ft-11-my-portfolio/static/js/runtime-main.04a910e7.js.map",
+    "static/js/2.83888960.chunk.js": "/fsf-ft-11-my-portfolio/static/js/2.83888960.chunk.js",
+    "static/js/2.83888960.chunk.js.map": "/fsf-ft-11-my-portfolio/static/js/2.83888960.chunk.js.map",
+    "index.html": "/fsf-ft-11-my-portfolio/index.html",
+    "static/js/2.83888960.chunk.js.LICENSE.txt": "/fsf-ft-11-my-portfolio/static/js/2.83888960.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.04a910e7.js",
+    "static/js/2.83888960.chunk.js",
+    "static/js/main.04c96281.chunk.js"
+  ]
+}
