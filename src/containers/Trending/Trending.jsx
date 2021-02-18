@@ -11,7 +11,7 @@ const Trending = () => {
   useEffect(() => {
     axios
       .get(
-        "http://api.giphy.com/v1/gifs/trending?api_key=b29g54U81w1GbkyNxo6Osae29OsTEwso&rating=g"
+        "https://api.giphy.com/v1/gifs/trending?api_key=b29g54U81w1GbkyNxo6Osae29OsTEwso&rating=g"
       )
       .then((response) => {
         setTrendingGIFs(response.data.data);
