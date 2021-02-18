@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Random from "./containers/Random/Random";
+import Search from "./containers/Search/Search";
+import Trending from "./containers/Trending/Trending";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import AlertContext from "./contexts/alertContext";
 
 function App() {
+  const [error, setError] = useState("");
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AlertContext.Provider value={{ error, setError }}>
+        <Router basename="/">
+          <Switch>
+            <Route exact path="/" component={Random} />
+            <Route path="/search" component={Search} />
+            <Route path="/trending" component={Trending} />
+          </Switch>
+        </Router>
+      </AlertContext.Provider>
     </div>
   );
 }
